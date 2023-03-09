@@ -1,0 +1,313 @@
+.main-text {
+    background-image: url("https://images.pond5.com/black-void-space-populated-falling-footage-086613083_prevstill.jpeg");
+    border: solid;
+    border-color: grey;
+    padding: 50px;
+
+    font-family: Snell Roundhand, cursive;
+    text-align: center;
+    color: #ffffff;
+}
+.main-text2 {
+    background-image: url("data:image/jpeg;base64,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");
+    border: solid;
+    border-color: grey;
+    padding: 30px;
+
+    font-family: Snell Roundhand, cursive;
+    text-align: center;
+    color: #ffffff;
+}
+.paragraph-text {
+    font-family: times;
+}
+.console {
+    border: solid;
+    border-color: black;
+    padding: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+
+#quantum-assembler-open {
+	border-radius: 10px;
+	width: 100px;
+	box-shadow: 0 9px #999;
+}
+#button-gain, #button-up-gain, #button-up-gain2 {box-shadow: 0 9px #999; border-radius: 10px;}
+#quantum-assembler-open:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.shop {
+  background-color: grey; /* Green */
+  border-style: solid;
+  border-color: #303436;
+  border-radius: 15px 50px 30px 5px;
+  border-width: thick;
+  color: white;
+  background-image: url("https://cdn.pixabay.com/photo/2018/07/25/16/00/art-3561710__340.jpg");
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.shop2 {
+  background-color: grey; /* Green */
+  border-style: solid;
+  border-color: #303436;
+  border-radius: 15px 50px 30px 5px;
+  border-width: thick;
+  color: white;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCIQhBFvy39pOxgX4jG7BgFisglGbFlr6Hw&usqp=CAU");
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.shop3 {
+  background-color: grey; /* Green */
+  border-style: solid;
+  border-color: #303436;
+  border-radius: 15px 50px 30px 5px;
+  border-width: thick;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.shop-button {
+	color: grey;
+	border: 2px solid grey;
+	transition-duration: 0.2s;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrOtb5Ws9OooCpau_R9-Q5LF7BKAq4zll2Q&usqp=CAU");
+}
+.shop-button:hover {
+	background-color: #d1d1d1; /* Green */
+	color: white;
+	border-color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#workspace {
+  display: grid;
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.overlayMenu {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.progress1 {
+  width: 250px;
+  background-color: rgb(139, 139, 139);
+}
+
+.progress2 {
+  width: 0%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: left;
+  line-height: 30px;
+  color: white;
+}
+
+.progress1_1 {
+  width: 250px;
+  background-color: rgb(139, 139, 139);
+}
+
+.progress1_2 {
+  width: 0%;
+  height: 30px;
+  background-color: #441bd8;
+  text-align: left;
+  line-height: 30px;
+  color: white;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  transition: 0.2s;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup:hover {color: #555;}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -20px;
+  -webkit-animation: fadeOut 0.2s;
+  animation: fadeOut 0.2s;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.2s;
+  animation: fadeIn 0.2s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;} 
+  to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity:0 ;}
+}
+
+
+.skillTree {
+  width: 50px;
+  height: 50px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 7.5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 3px solid rgb(107, 107, 107);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-tab {
+  color: #999;
+  transition: 0.2s;
+}
+
+.modal-tab:hover {
+  color: #fff;
+}
+
+#talent-tree-points {background-image: url("https://freerangestock.com/sample/140800/wooden-background--dark-brown-wood-background.jpg");}
+
+#talent-tree-content {
+  background-image: url("https://i.pinimg.com/736x/39/41/8f/39418fc243f36ed2e972f162190e89a8.jpg");
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#talent-tree-talents {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 16;
+  grid-template-columns: auto auto auto;
+
+  grid-row-start: 1;
+  grid-row-end: 32;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}

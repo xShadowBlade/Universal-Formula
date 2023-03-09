@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <title>Universal Formula</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/loading.css">
+	<link rel="stylesheet" href="css/cell_builder.css">
+	<link rel="stylesheet" href="css/modal.css">
+	
+	<script src="js/etherealConsole.js"></script>  <!-- so i can debug on my school computer-->
+
+	<script src="break_eternity.js"></script>
+
+	<script src="js/eMath/eMath.js"></script>
+
+	<script src="js/game.js"></script>
+	<script src="js/static.js"></script>
+	<script src="js/script.js"></script> 
+	<script src="js/ai_scripting.js"></script> 
+	<script src="js/display.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/format.js"></script>
+	<script src="js/elements.js"></script>
+
+	<script src="js/features/quantum_assembler.js"></script>
+	<script src="js/features/mass.js"></script>
+
+	
+</head>
+<body>
+<!-- <div>
+	<span class="loading"></span>
+ </div> -->
+ <div id="content" style="display:none;">
+ <h1 class="main-text">Shadows Inside</h1> <!-- Title -->
+ <h1>~Game~</h1>
+ 
+ <div class="topnav">
+	<a class="active" href="#">Matter</a>
+	<!--  <a href="#">Energy</a>
+	<a href="#">Time</a>
+	<a href="#">Space</a>
+	<a href="#">Life</a>
+	<a href="#">About</a> -->
+  </div>
+ <p id = "display-build"></p>
+ <button type="button" onclick="help()" id="button-help">Help</button>
+ <p id = "display-crit">Made by Dennis</p>
+ <img src = "Art/New_Piskel.png" alt = "Player" id = "player_art">
+ <br>
+ <!-- <div class="popup" onclick="popupHandler.stats()">
+	<p1><strong>Stats (click to view)</strong></p1>
+	<span class="popuptext" id="statsPopup">
+		<p id = "display-agility">Agility: 1</p>
+		<p id = "display-wisdom">Wisdom: 1</p>
+	</span>
+  </div>
+  <br><br>
+<div onclick="popupHandler.talents.tree.open()" class="popup">
+	<p1 id = "talent-tree-button"><strong>Talent Tree (click to view)</strong></p1>
+</div>
+
+<div id="talent-tree-div" class="modal">
+	<div id="talent-tree-content" class="modal-content">
+		<span class="close" onclick="popupHandler.talents.tree.close()">&times;</span>
+		<button id="talent-tree-points" class="modal-tab"><strong>Points Tree</strong></button>
+
+		<div id="talent-tree-talents">
+			
+		</div>
+	</div> 
+</div>
+ <br>
+ <br>
+ <p1 id="display-talent-levels">Talent Levels: 1</p1>
+ <p1 id="display-talent-points">| Talent Points: 0</p1>
+
+ <div class="progress1_1"><div class="progress1_2" id="talent-bar">0/10(0%)</div></div>
+ <br><br>-->
+ <div class="progress1"><div class="progress2" id="gain-bar">0%</div></div>
+ <p id = "display-currency">Points: 0</p>
+ <button type="button" onclick="gain()" id="button-gain">Gain</button>
+ <br><br>
+<!--
+ <button type="button" onclick="up_gain()" id="button-up-gain">Upgrade Base Value [1] (2)</button>
+ <button type="button" onclick="up_gain2()" id="button-up-gain2">Upgrade Base Speed [1] (25)</button>
+ 
+ <br><br>
+ <button type="button" onclick="prestige()" id="button-prestige"><strong>???</strong></button>
+ <p id = "display-super-points">???</p> 
+ <h4 id = "display-shop-title">???</h4>
+ <div class="shop">
+	<button type="button" onclick="up1()" id="button-up1" class="shop-button">???</button>
+	<button type="button" onclick="up2()" id="button-up2" class="shop-button">???</button>
+	<br>
+	<button type="button" onclick="up3()" id="button-up3" class="shop-button">???</button>
+	<button type="button" onclick="up4()" id="button-up4" class="shop-button">???</button>
+	<br>
+	<button type="button" onclick="rebirth()" id="button-rebirth" class="shop-button"><strong>???</strong></button>
+</div>
+ <p id = "display-mega-points">???</p> 
+ <h4 id = "display-shop2-title">???</h4>
+ <div class="shop2">
+	<button type="button" onclick="shop2_up1()" id="button-shop2-up1" class="shop-button">???</button>
+	<button type="button" onclick="shop2_up2()" id="button-shop2-up2" class="shop-button">???</button>
+	<br>
+	<button type="button" onclick="shop2_up3()" id="button-shop2-up3" class="shop-button">???</button>
+	<button type="button" onclick="shop2_up4()" id="button-shop2-up4" class="shop-button">???</button>
+	<button type="button" onclick="shop2_up5()" id="button-shop2-up5" class="shop-button">???</button>
+	<br>
+	<button type="button" onclick="ascend()" id="button-ascend" class="shop-button"><strong>???</strong></button>
+	<button type="button" onclick="liquidate()" id="button-liquidate" class="shop-button"><strong>???</strong></button>
+ </div>
+ <p id = "display-cosmic-points">???</p> 
+ <h4 id = "display-shop3-title">???</h4>
+ <div class="shop3">
+	<button type="button" onclick="shop3_up1()" id="button-shop3-up1" class="shop-button">???</button>
+	<button type="button" onclick="shop3_up2()" id="button-shop3-up2" class="shop-button">???</button>
+	<br>
+	<button type="button" onclick="shop3_up3()" id="button-shop3-up3" class="shop-button">???</button>
+	<button type="button" onclick="shop3_up4()" id="button-shop3-up4" class="shop-button">???</button>
+	<br>
+	<button type="button" onclick="shop3_up5()" id="button-shop3-up5" class="shop-button">???</button>
+	<button type="button" onclick="shop3_up6()" id="button-shop3-up6" class="shop-button">???</button>
+	<br>
+ </div>
+ <h4 id = "display-charge-title">???</h4>
+ <div class="charge" id="display-charge-div">
+	<p id = "display-charge">???</p> 
+ </div>
+ <br> -->
+
+<!-- 
+ <h2><strong>Control Center</strong></h2>
+ <button type="button" onclick="button()" id="button-light-mode"> Light Mode</button><br>
+ <button type="button" onclick="login()" id="button-login"> Gain Access</button><br>
+ <button type="button" onclick="coinflip()" id="button-coinflip">Flip a coin</button><br>
+ <button type="button" onclick="roll(6)" id="button-dice1">Roll a 6-sided dice</button><br>
+ <button type="button" onclick="roll(prompt('How many sides?'))" id="button-dice2">Roll a n-sided dice</button><br>
+ <button type="button" onclick="crash()" id="button-annoy">crash</button><br>
+
+ <button type="button" onclick="generateWorkspace()">Generate New Workspace</button>
+ <h3><strong>Made by: zBlade</strong></h3>
+ <p> @xShadow_Blade#2720 </p>
+<p class="paragraph-text" id="poem-1">
+ Roses are dead <br>
+ Violets are dying <br>
+ Outside I'm smiling <br>
+ Inside I'm crying 
+ </p>
+ <img src = "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/dying-rose-drawings-drawer.jpg" alt="Image not found" width="180px" height="300px">
+ <br>
+ <button> <a href ="https://www.youtube.com/watch?v=a3Z7zEc7AXQ">
+ To see more, click here 
+ </a></button> -->
+<!--  <h1 class="main-text2">Exhibit 1: Snake</h1>
+ <h1><a href = "https://codehs.com/sandbox/id/snake-b5Im5i/run">Link</a></h1> -->
+ </div>
+ </body>
+</html>
