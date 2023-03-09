@@ -255,5 +255,5 @@ addStartFunction("quantumAssembler", () => {
     }
     }
     Game["static"].get("energy").display = d_ID("quantum-assembler-energy");
-    Game["static"].quantumAssembler.currencies.init(Game["data"].quantumAssembler)
+    Game["static"].quantumAssembler.currencies.init(Game["data"].quantumAssembler);
 });
